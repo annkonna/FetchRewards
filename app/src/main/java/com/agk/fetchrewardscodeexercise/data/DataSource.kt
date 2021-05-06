@@ -21,7 +21,7 @@ class DataSource {
             }
         }
 
-        finalList = finalList.sortedWith(compareBy<FetchRewardsData>{ it.resourceId1.toInt() }.thenBy { it.resourceId2 }).toMutableList()
+        finalList = finalList.sortedWith(compareBy<FetchRewardsData>{ it.listId.toInt() }.thenBy { it.name }).toMutableList()
 
         finalList.add(0, FetchRewardsData("ListId", "Name", "Id"))
 

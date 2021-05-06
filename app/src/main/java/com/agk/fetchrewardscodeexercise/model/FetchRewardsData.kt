@@ -1,3 +1,3 @@
 package com.agk.fetchrewardscodeexercise.model
 
-data class FetchRewardsData(val resourceId1: String, val resourceId2: String, val resourceId3: String)
+data class FetchRewardsData(val listId: String, val name: String, val id: String)

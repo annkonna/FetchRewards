@@ -40,9 +40,9 @@ class ItemAdapter(
      */
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val item = dataset[position]
-        holder.textView1.text = item.resourceId1
-        holder.textView2.text = item.resourceId2
-        holder.textView3.text = item.resourceId3
+        holder.textView1.text = item.listId
+        holder.textView2.text = item.name
+        holder.textView3.text = item.id
     }
 
     /**
